@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$font: "Poppins", sans-serif;
+
+$color1: #f0f1fa;
+$color2: #2b2e3a;
+$color3: #1a2ffb;
+$white: #ffffff;
+$black: #000000;
+
+$borderRadius: 30px;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font;
+  color: $black;
+  background-color: $color1;
+}
+button,
+a {
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
+  color: $black;
+}
+button {
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
+  color: $black;
+}
+a:visited,
+button:visited {
+  color: $black;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: $white;
+  height: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border: none;
+  margin-right: 30px;
+  display: flex;
+  &:after {
+    content: "";
+    width: 16px;
+    height: 8px;
+    background: url("../media/arrowRight.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    margin-left: 10px;
+  }
+}

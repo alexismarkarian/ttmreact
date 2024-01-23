@@ -1,0 +1,32 @@
+section {
+  padding: 30px 6vw;
+}
+
+.ttm-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 115px);
+
+  h1 {
+    font-size: 8vw;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+    strong {
+      display: block;
+      font-size: 3vw;
+      margin-left: 20vw;
+      font-weight: 500;
+    }
+  }
+  p {
+    max-width: 580px;
+    width: 100%;
+    font-size: 2vw;
+    margin: 4vw 0 0 auto;
+    button {
+      margin-top: 30px;
+    }
+  }
+}
